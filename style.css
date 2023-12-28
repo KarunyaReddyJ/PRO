@@ -1,6 +1,7 @@
 body{
     width: 100vw;
 }
+/* nav bar styling*/
 .nav ul {
     text-decoration-style: none;
     list-style-type: none;
@@ -21,6 +22,9 @@ body{
     text-decoration: none;
     font-size: 20px;
     margin:20px 20px;
+}
+.nav ul li .navA:hover{
+    color: skyblue;
 }
 @media screen and (max-width: 400px) {
     .nav ul .tdash{
@@ -44,6 +48,7 @@ body{
         margin: 0;
     }
 }
+/* main section styling*/
 .main #home {
     height: 90vh;
     background-image: url(https://th.bing.com/th/id/OIP.HpE_mnoJUzHaWmlCO4REXwHaEK?rs=1&pid=ImgDetMain);
