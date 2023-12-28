@@ -1,12 +1,17 @@
 body{
-    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+    background-image: url(https://th.bing.com/th/id/R.62c6f9883f7929ebb56a13e4a71694af?rik=w5MnOEIzTnvdJw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fHD-Desktop-Best-HD-Wallpapers.jpg&ehk=7XSd%2bahkZZAFivtVm%2bG6MZrJQx7W4F5WmygxwwpzSNE%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
 }
 /* nav bar styling*/
 .nav ul {
     text-decoration-style: none;
     list-style-type: none;
     color: white;
-    background-color: black;
+    
     display: flex;
     padding: 20px 10px;
 }
@@ -24,7 +29,8 @@ body{
     margin:20px 20px;
 }
 .nav ul li .navA:hover{
-    color: skyblue;
+    color:  rgba(202, 241, 8, 0.765);
+    text-shadow: 1px 1px 10px black;
 }
 @media screen and (max-width: 400px) {
     .nav ul .tdash{
@@ -51,17 +57,17 @@ body{
 /* main section styling*/
 .main #home {
     height: 90vh;
-    background-image: url(https://th.bing.com/th/id/OIP.HpE_mnoJUzHaWmlCO4REXwHaEK?rs=1&pid=ImgDetMain);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover;
+    display: flex;
 }
 .main #home .description{
-    color: white;
-    text-shadow: 0px 0px 10px silver;
-    position: relative;
-    top: 20em;
-    left: 10em;
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    justify-content: center;
+    margin: auto;
 }
 .main #home .description .name{
     color: red;
@@ -78,12 +84,30 @@ body{
     }
     .main #home{
         width: 100vw;
+        height: 90vh;
+        display: flex;
     }
     .main #home .description{
         max-width: fit-content;
         padding: 20px 60px;
         margin:auto;
         position: relative;
-        transform: translate(-65%,-50%);
+        justify-content: center ;
     }
+}
+/* footer section*/
+.footer{
+    padding: 20px 30px;
+    color: black;
+    
+}
+.footer .copyright{
+    width: fit-content;
+    padding: 10px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+} 
+.footer .copyright #year{
+    display: inline;
 }
