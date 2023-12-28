@@ -9,4 +9,5 @@ tdash.addEventListener('click',()=>{
     navElements.forEach(element => {
         element.style.display=disp
     });
+    console.log("clicked")
 })
